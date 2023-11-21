@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Question Paper Generator APP</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="outer-wrapper">
+        <header>
+            <div class="head-container">
+                <a href="index.html" class="float-left">Back </a>
+                <h1 class="heading text-center">Generate Question Paper </h1>
+            </div>
+        </header>
+
+        <section class="person-model">
+
+            <h4 class="py-3">Enter Details To Generate Question Paper</h4>
+            <form onsubmit="event.preventDefault();">
+                <br>
+                <div class="form-group row h-100 justify-content-center align-items-center">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">DIFFICULTY LEVEL</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control mx-2" id="difficulty1" name="difficulty1" placeholder="Easy" value="Easy" required="" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control mx-2" id="difficulty1marks" name="difficulty1marks" placeholder="30 Marks" required="" />
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row h-100 justify-content-center align-items-center">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">DIFFICULTY LEVEL</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control mx-2" id="difficulty2" name="difficulty2" placeholder="Medium" value="Medium" required="" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control mx-2" id="difficulty2marks" name="difficulty2marks" placeholder="20 Marks" required="" />
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row h-100 justify-content-center align-items-center">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">DIFFICULTY LEVEL</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control mx-2" id="difficulty3" name="difficulty3" placeholder="Hard" value="Hard" required="" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control mx-2" id="difficulty3marks" name="difficulty3marks" placeholder="50 Marks" required="" />
+                    </div>
+                </div>
+                <br>
+                <button id="qn-generates" class="btn btn-primary">Generate Question Paper </button>
+                <br>
+            </form>
+            <br><br>
+
+            <br>
+            <h2>Question Paper</h2><br><br>
+            <div id="qnlist" class="text-left">
+
+            </div>
+        </section>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="./js/generateqn.js"></script>
+
+</body>
+
+</html>

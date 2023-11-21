@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Question Paper Generator APP</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="outer-wrapper">
+        <header>
+            <div class="head-container">
+                <h1 class="heading">Question Paper Generator
+
+                    <a href="generator.html" id="qn-generate" class="btn btn-primary float-right">  Generate Question Paper ></a>
+                </h1>
+            </div>
+        </header>
+
+
+
+        <section class="person-model">
+
+
+
+            <h4 class="py-3">Enter Details To Add New Question</h4>
+            <form onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <input type="text" class="form-control mx-2" id="text" name="text" placeholder="Text" required="" />
+                    <input type="text" class="form-control mx-2" id="subject" name="subject" placeholder="Subject" required="" />
+                    <input type="text" class="form-control mx-2" id="topic" name="topic" placeholder="Topic" required="" />
+                    <input type="text" class="form-control mx-2" id="difficulty" name="difficulty" placeholder="Difficulty" required="" />
+                    <input type="text" class="form-control" id="mark" name="mark" placeholder="Mark" required="" />
+                </div>
+                <br>
+                <button id="add-qn-btn" class="btn btn-primary">Add Question</button>
+            </form>
+            <br>
+
+            <div id="qnBank" style="display: none">
+                <table class="table table-striped " id="mytab1">
+                    <thead>
+                        <tr>
+                            <th>Text</th>
+                            <th>Subject</th>
+                            <th>Topic</th>
+                            <th>Difficulty</th>
+                            <th>Mark</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+
+        <body> Thank You </body>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
